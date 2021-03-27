@@ -26,7 +26,7 @@ ul {
     padding: 10px;
 }
 
-#button {
+#right-button {
 background-color: #1a73e8;
 color: white;
 border-radius: 8px;
@@ -58,7 +58,7 @@ a {
 
 .searchbar{
     padding-top:20px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 
 #search {
@@ -71,6 +71,16 @@ a {
     width: 500px;
 }
 
+.buttons{
+    text-align: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+
+}
+
+
 
 </style>
 
@@ -79,7 +89,7 @@ a {
     <ul>
         <li><a class="left-list" href="">About</a></li>
         <li><a class= "left-list" href="">Store</a></li>
-        <li><a class= "right-list" id= "button" href="">Sign In</a></li>
+        <li><a class= "right-list" id= "right-button" href="">Sign In</a></li>
         <li><a class= "right-list" href=""><img id="googledots" src="https://static.thenounproject.com/png/10563-200.png"></a></li>
         <li><a class= "right-list" href="">Images</a></li>
         <li><a class= "right-list" href="">Gmail</a></li>
@@ -91,11 +101,16 @@ a {
 <div class="logo">
     <img id="googleimage" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
 </div>
-    <form class="searchbar">
+<div>
+        <form class="searchbar">
         <input type="search" id="search" />
     </form> 
+</div>
 
-
+<div class="buttons">
+<button> <a href=""> Google Search</a></button>
+<button> <a href=""> I'm Feeling Lucky</a></button>
+    </div>
 </body>
 
 
