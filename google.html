@@ -8,7 +8,7 @@ header {
     text-align: center;
 }
 
-ul {
+.heading-list {
     list-style-type: none;
     font-size: 14px;
     font-family: arial,sans-serif;
@@ -79,14 +79,33 @@ a {
     margin-bottom: auto;
 
 }
+footer {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.footer-list{
+    list-style-type: none;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color:black;
+    padding: 10px}
+    
+.left-list-bottom {
+    float: left;
+    padding: 10px;
+}
 
-
+.right-list-bottom {
+    float: right;
+    padding: 10px;
+}
 
 </style>
 
 <body>
 <header>
-    <ul>
+    <ul class="heading-list">
         <li><a class="left-list" href="">About</a></li>
         <li><a class= "left-list" href="">Store</a></li>
         <li><a class= "right-list" id= "right-button" href="">Sign In</a></li>
@@ -111,6 +130,20 @@ a {
 <button> <a href=""> Google Search</a></button>
 <button> <a href=""> I'm Feeling Lucky</a></button>
     </div>
+
+<footer>
+    <ul class="footer-list">
+        <li><a class="left-list-bottom" href="">Advertising</a></li>
+        <li><a class= "left-list-bottom" href="">Business</a></li>
+        <li><a class= "left-list-bottom" href="">How Search works</a></li>
+        <li><a class= "right-list-bottom" href="">Settings</a></li>
+        <li><a class= "right-list-bottom" href="">Privacy</a></li>
+        <li><a class= "right-list-bottom" href="">Terms</a></li>
+        
+      </ul>
+
+
+</footer>
 </body>
 
 
