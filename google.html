@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <style>
 
-.logo {
+ul {
+    list-style-type: none;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color:black;
+    padding: 10px
+    }
 
-    display: flex;
-    flex:100%;
+.left-list {
+    float: left;
+    padding: 10px;
+}
+
+.right-list{
+    float: right;
+    padding: 10px;
+}
+
+#button {
+background-color: #1a73e8;
+color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    padding-top: 90px;
+    
+}
+
+#googleimage {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
-    padding-top: 80px;
-    width: 19%;
+    width: 20%;
     height:auto;
+
 }
+
 .searchbar{
     padding-top:20px;
+    padding-bottom: 80px;
 }
 
 #search {
-    display: flex;
-    flex: 100%
+    display: block;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: auto;
     height: 34px;
     width: 500px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-    float: left;
-    font-size: 14px;
-    font-family: arial,sans-serif;
-    color: #222;
-    padding: 10px
-}
 
 </style>
 
 <body>
 <header>
     <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Store</a></li>
-        <li style="float:right"><a href="">Gmail</a></li>
-        <li style="float:right"><a href="">Images</a></li>
-        <li style="float:right" "background-color: #1a73e8"><a href="">Sign in</a></li>
+        <li><a class="left-list" href="">About</a></li>
+        <li><a class= "left-list" href="">Store</a></li>
+        <li><a class= "right-list" id= "button" href="">Sign In</a></li>
+        <li><a class= "right-list" href="">Images</a></li>
+        <li><a class= "right-list" href="">Gmail</a></li>
+        
+        
       </ul>
 </header>
 
-<div>
-    <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<div class="logo">
+    <img id="googleimage" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
 </div>
     <form class="searchbar">
         <input type="search" id="search" />
